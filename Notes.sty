@@ -1,0 +1,133 @@
+Object class
+java.lang.*;
+-> public class getClass();
+-> public int hashCode();
+-> public boolean equals(object obj);
+-> public String toString();
+-> protected Object clone() throws CloneNotSupportedException();
+-> protected void finalize();
+-> wait();
+-> wait(int);
+-> notify();
+-> notifyAll();
+
+
+***LLM***
+-> Large Language Model
+-> It is type of artificial intelligence disgn to understand ,process and  generate human language
+-> It is already trained on massive amount of text data such as books and websites
+-> LLM lend complex patterns in language to produce meaningful responses, translates language , summarize text, answers questions and resisting 
+-> they use deeplearning techniques
+
+
+Topics
+-> prefix sum - range arrays
+-> circular arrays
+
+Prefix sum is also known as cummulative sum is a technique used to calculate the sum of elements in an array or list efficiently.
+It involves creating a new array where each element at index i represents the sum of all elements from the original array from index 0 to i.
+This allows for quick calculation of the sum of any subarray by subtracting the prefix sum at the starting index from the prefix sum at the ending index.
+
+In java there is no concept of garbage values instead the uninitialized variables have default values based on their data types.
+Default value for integer catagory(byte,short,int,long) is 0
+Default value for floating point catagory(float,double) is 0.0f, 0.0d
+Default value for string is null
+Default value for char is '\u0000' (null character)
+Default value for boolean is false
+Default value for object reference is null
+
+Method local variables in java you have to declare and initialise in a single line otherwise it will give a compile time error
+
+Circular array
+An array is called circular if we consider the first element as next of the last element. Circular arrays are used to implement queue
+
+
+KMP ALGORITHM
+The Knuth-Morris-Pratt (KMP) algorithm is an efficient string matching algorithm that
+It is very useful when it comes to finding multiple patterns in a text or when the pattern is long and complex.
+The navie solution for this problen is to compare the pattern with every possible substring of the text, which can be inefficient for large texts or patterns.Starting from the left most position and moving rightwards this takes O)n*m) time complexity in worst case where n is the length of the text and m is the length of the pattern.
+When we work with long text pattern the navie method and broute force method becomes inefficient.
+-> KMP Algorithm is an efficient string searching algorithm. It utilizes a pre-computed lps array for the pattern to avoid rescanning the text when a mismatch occurs.
+
+PRACTICAL APPLICATIONS WHERE KMP ALGORITHM IS USED
+1. Text Editors: KMP algorithm is used in text editors for find and replace functionality.
+2. DNA Sequence Analysis: KMP algorithm is used in bioinformatics for searching specific patterns in DNA sequences.
+3. Network Security: KMP algorithm is used in network security for pattern matching in intrusion detection
+
+
+                                   iterable
+                                      |
+                                      |
+                                   iterator
+                                      |
+                                      |
+                                   Collection
+
+
+
+
+Collection
+    Collection interface is super interface of list ,set and queue and all collection interfaces
+    we can add elemets at any position
+    allows duplicate elements
+    allows multiple null elements
+    Allows us to iterate data only in forward direction
+
+List:
+    lsit preserves insertion order
+    list allows to add elements at any position
+    list allows to delete elements at any position
+    list allows duplicate elements
+    lsit allows multiple null elements
+    list is a bi directional iterator
+        Meaning iterate forward direction -Iterator/ for eac
+        hfor forward/ backward  --- listIterator
+Set:
+    set does not preserve insertion order
+    set does not allow to add elements at any position
+    set does not allow to delete elements at any position
+    set does not allow duplicate elements
+    set allows only one null element
+    set is a bi directional iterator
+        Meaning iterate forward direction -Iterator/ for each
+        hfor forward/ backward  --- listIterator
+    HashSet - underlying data structure is hash table
+    LinkedHashSet - underlying data structure is linked list and hash table
+    TreeSet (Stores the elemnts in sorted Order and if null entry is available then it will throw a runtime error )
+
+
+Object class METHOD 
+
+java.lang.Objecy:
+-> public class getClass();
+-> public int hashCode();
+-> public boolean equals(object obj);
+-> public String toString();
+-> protected Object clone() throws CloneNotSupportedException();
+-> protected void finalize();
+-> wait();
+-> wait(int);
+-> notify();
+-> notifyAll();
+
+Comperable Interface 
+
+
+
+
+Hashing 
+https://www.scaler.com/topics/java/what-is-hashing-in-java/
+refer this
+
+
+
+
+CONSISTENT Hashing
+CONSUSTENT HASHING IS A technique used in distributed systems to distribute data or requests among a set of servers or in the way that minimizes the impact when servers can be added or removed.
+Unlike tradional hashing hash(key) % num_servers where adding or removing a server can neccessitae remapping a large portion of keys consistemt hashing aims to only remap a small fraction of keys. 
+\\\
+
+What do u mean by scalling and whats the difference bw horizontal and vertical scaling .
+
+4 2 4 7 3 4  prev 2=4.  rev1=4
+res =8
